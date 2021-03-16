@@ -1,0 +1,30 @@
+{
+    "name": "name of contribution",
+    "contactFirstName": "first name",
+    "contactLastName": "last name",
+    "contactEmail": "name@email.com",
+    "contactInstitution": "institution",
+    "contactInstitutionUrl": "institution URL",
+    "type": ["DRO", "Physical Phantom Plans", "Source Code"],
+    "modality": ["ASL", "DSC", "DCE"],
+    "shortDescription": "one line of your contribution",
+    "longDescription": "A longer description of the contribution, up to 200 words",
+    "imageFile": "image file name with extension, w.r.t. the images_inventories/phantom_collaboration directory",
+    "url": ["url 1", "url 2"],
+    "references": [
+        {
+            "refText": "text describing reference 1 (repeat as many times as necessary)",
+            "refUrl": "reference url"
+        },
+        {
+            "refText": "text describing reference 2",
+            "refUrl": "reference url"
+        }
+    ],
+    "activities": [
+        "activity 1",
+        "activity 2",
+        "activity 3"
+    ],
+    "dateAdded": "yyyy-mm-dd"
+}
