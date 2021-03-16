@@ -1,0 +1,55 @@
+[
+    {
+        "name": "ASLDRO",
+        "contactFirstName": "Aaron",
+        "contactLastName": "Oliver-Taylor",
+        "contactEmail": "aaron.oliver-taylor@goldstandardphantoms.com",
+        "contactInstitution": "Gold Standard Phantoms",
+        "contactInstitutionUrl": "https://www.goldstandardphantoms.com",
+        "type": [
+            "DRO",
+            "Source Code"
+        ],
+        "modality": [
+            "ASL"
+        ],
+        "shortDescription": "Digital reference object software for Arterial Spin Labelling",
+        "longDescription": "We have developed digital reference object software for Arterial Spin Labelling.  This can generate raw synthetic raw ASL data (in BIDS compliant format) based on input ground truth (perfusion rate, transit time, t1, t2, m0 etc), sequence parameters, and data output type. This software was developed as part of the ASPIRE project, a Eurostars funded collaboration between Gold Standard Phantoms, VUmc Amsterdam (ExploreASL) and mediri GmbH, with the specific intentions for it being used in software development and integration testing of ExploreASL.  The software is released under an open source MIT license and we invite the rest of the ASL community to provide feedback, fork and contribute.",
+        "imageFile": "asldro.png",
+        "url": [
+            "https://github.com/gold-standard-phantoms/asldro",
+            "https://pypi.org/project/asldro/",
+            "https://asldro.readthedocs.io/"
+        ],
+        "references": [
+            {
+                "refText": "ISMRM 2021 Abstract accepted for digital poster",
+                "refUrl": ""
+            }
+        ],
+        "activities": [
+            "Collaborations to further develop the DRO",
+            "Collaborations to use the DRO to test ASL analysis software"
+        ],
+        "dateAdded": "2021-03-16"
+    },
+    {
+        "name": "OSIPI DCE-MRI Challenge DRO",
+        "contactFirstName": "Floris",
+        "contactLastName": "Van den Abeele",
+        "contactEmail": "floris@hyperfusion.ai",
+        "contactInstitution": "Hyperfusion",
+        "contactInstitutionUrl": "https://hyperfusion.ai",
+        "type": ["DRO"],
+        "modality": ["DCE"],
+        "shortDescription": "DCE digital reference object created for the OSIPI DCE-MRI Challenge",
+        "longDescription": "This DRO was built to assess the accuracy of K^trans estimations by competing teams as part of the Osipi TF6.2 DCE-MRI perfusion analysis challenge. It is based on a two-compartment exchange model (2CXM) and the signal model of a spoiled gradient-echo sequence in steady-state. It contains multiple structures with specifications of normal gray matter, normal white matter, tumor, necrosis, and arterial input function (AIF) taking a range of values for PS, V e , V p , and F. Temporal sampling time is dt = 6s, the total scan time is 6 min and Rician noise has been simulated. ",
+        "imageFile": "OSIPI.png",
+        "url": [],
+        "references": [],
+        "activities": [
+            "Collaborations with researchers"
+        ],
+        "dateAdded": "2021-03-16"
+    }
+]
