@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" href="../css/style.css" />
+<!-- Container -->
+<div class="container">
+    <h1>Phantom and DRO Literature Inventory</h1>
+    <div>
+        <ul class="list">
+            {% for entry in site.data.phantom_literature %}
+            {% if entry.data.itemType != "attachment" %}
+            <button class = "collapsible">
+                <div class="row">
+                    <div><a href="{{ entry.data.url }}">{{ entry.data.title }}</a></div>
+                    <div>{{site.data.literature_mapping[entry.data.itemType]}}</div>
+                    <div>{{ entry.meta.creatorSummary }} {{ entry.data.date }}</div>
+                    <div>Tags: {%for tag in entry.data.tags %} {{tag.tag}}{%if forloop.last %}.{% else %},{% endif%}{% endfor%}</div>
+
+                </div>
+            </button>
+            <div id="content{{ forloop.index }}" class="content">
+                <div>{{ entry.data.abstractNote }}</div>
+                <br>
+                <div>Download citation <a href="https://api.zotero.org/groups/2900833/items/{{ entry.key }}?format=bibtex">bibtex</a></div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<script src="../js/index.js"></script>
+
