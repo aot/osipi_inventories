@@ -1,124 +1,58 @@
-<html>
-
-<head>
-    <style>
-        .content {
-            padding: 0 18px;
-            background-color: #ffffff;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-
-        .collapsible {
-            background-color: #ffffff;
-            color: black;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-        }
-
-        .active,
-        .collapsible:hover {
-            background-color: #fafafa;
-        }
-
-        .columnL {
-            float: left;
-            width: 70%;
-        }
-
-        .columnR {
-            float: right;
-            width: 30%;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
-
-</head>
-
-<body>
-    <!-- Container -->
-    <div class="container">
-        <h1>Phantom and DRO Collaboration Inventory</h1>
-        <div>
-            <ul class="list">
-                {% for entry in site.data.phantom_contributions %}
-                <button class="collapsible">
+<link rel="stylesheet" href="../css/style.css" />
+<!-- Container -->
+<div class="container">
+    <h1>Phantom and DRO Collaboration Inventory</h1>
+    <div>
+        <ul class="list">
+            {% for entry in site.data.phantom_contributions %}
+            <button class="collapsible">
+                <div class="row">
                     <div class="row">
-                        <div class="row">
-                            <div class="columnL">
-                                <img src="images_inventories/phantom_contributions/{{ entry.imageFile }}" style="max-width:100%; max-height: 100px;" />
-                            </div>
-                            <div class="columnR">
-                                <a href="{{ entry.url[0] }}">
-                                    <h1>{{ entry.name }}</h1>
-                                </a>
-                            </div>
+                        <div class="columnL">
+                            <img src="../images_inventories/phantom_contributions/{{ entry.imageFile }}" style="max-width:100%; max-height: 100px;" />
                         </div>
-                        <div class="row">
-                            <div>{{entry.shortDescription}}</div>
-                            <div>Contact: {{ entry.contactFirstName }} {{ entry.contactLastName}}, <a href="mailto:{{ entry.contactEmail}}">{{ entry.contactEmail }}</a></div>
-                            <div><a href="{{entry.contactInstitutionUrl}}">{{ entry.contactInstitution }}</a> </div>
-                            <div>Collaboration Type: {%for type in entry.type%} {{type}}{%if forloop.last %}.{% else %},{% endif%}{% endfor%}</div>
-                            <div>Imaging Modality: {{entry.modality}}</div>
-                            <br>
+                        <div class="columnR">
+                            <a href="{{ entry.url[0] }}">
+                                <h1>{{ entry.name }}</h1>
+                            </a>
                         </div>
                     </div>
-                </button>
-                <div id="content{{ forloop.index }}" class="content">
-                    <div>Collaboration Activities:</div>
-                    <ul class="list">
-                        {% for activity in entry.activities %}
-                        <li>{{ activity }}</li>
-                        {% endfor %}
-                    </ul>
-                    <div>External Links:</div>
-                    <ul>
-                        {% for url in entry.url %}<li><a href="{{url}}">{{url}}</a></li>{% endfor %}
-                    </ul>
-                    <div>{{ entry.longDescription }}</div>
-                    <br>
-                    <ol>
-                        {% for ref in entry.references %}
-                        <li><a href="{{ref.refUrl}}">{{ ref.refText }}</a>
-                        </li>{% endfor %}
-                    </ol>
-                    <div>Date added: {{entry.dateAdded}}</div>
-                    <br>
-
-
+                    <div class="row">
+                        <div>{{entry.shortDescription}}</div>
+                        <div>Contact: {{ entry.contactFirstName }} {{ entry.contactLastName}}, <a href="mailto:{{ entry.contactEmail}}">{{ entry.contactEmail }}</a></div>
+                        <div><a href="{{entry.contactInstitutionUrl}}">{{ entry.contactInstitution }}</a> </div>
+                        <div>Collaboration Type: {%for type in entry.type%} {{type}}{%if forloop.last %}.{% else %},{% endif%}{% endfor%}</div>
+                        <div>Imaging Modality: {{entry.modality}}</div>
+                        <br>
+                    </div>
                 </div>
+            </button>
+            <div id="content{{ forloop.index }}" class="content">
+                <div>Collaboration Activities:</div>
+                <ul class="list">
+                    {% for activity in entry.activities %}
+                    <li>{{ activity }}</li>
+                    {% endfor %}
+                </ul>
+                <div>External Links:</div>
+                <ul>
+                    {% for url in entry.url %}<li><a href="{{url}}">{{url}}</a></li>{% endfor %}
+                </ul>
+                <div>{{ entry.longDescription }}</div>
+                <br>
+                <ol>
+                    {% for ref in entry.references %}
+                    <li><a href="{{ref.refUrl}}">{{ ref.refText }}</a>
+                    </li>{% endfor %}
+                </ol>
+                <div>Date added: {{entry.dateAdded}}</div>
+                <br>
 
-                {% endfor %}
-            </ul>
-        </div>
+
+            </div>
+
+            {% endfor %}
+        </ul>
     </div>
-
-</body>
-
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-    }
-</script>
+</div>
+<script src="../js/index.js"></script>
