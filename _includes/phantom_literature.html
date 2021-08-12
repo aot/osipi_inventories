@@ -3,16 +3,41 @@
 <!-- Container -->
 <div class="container">
     <h1>Phantom and DRO Literature Inventory</h1>
+    {% assign modality_mappings = "" | split: ',' %}
+    {% for label in site.data.literature_mapping.modalities %}
+        {% assign modality_mappings =  modality_mappings | push : label[0] %}
+    {%endfor%}
+
+    {% assign type_mappings = "" | split: ',' %}
+    {% for label in site.data.literature_mapping.types %}
+        {% assign type_mappings =  type_mappings | push : label[0] %}
+    {%endfor%}
     <div>
         <ul class="list">
             {% for entry in site.data.phantom_literature %}
             {% if entry.data.itemType != "attachment" %}
             <button class = "collapsible">
                 <div class="row">
-                    <div><a href="{{ entry.data.url }}">{{ entry.data.title }}</a></div>
-                    <div>{{site.data.literature_mapping[entry.data.itemType]}}</div>
+                    <div><a href="{{ entry.data.url }}" target="_blank">{{ entry.data.title }}</a></div>
+                    <div>{{site.data.literature_mapping.entries[entry.data.itemType]}}</div>
                     <div>{{ entry.meta.creatorSummary }} {{ entry.data.date }}</div>
-                    <div>Tags: {%for tag in entry.data.tags %} {{tag.tag}}{%if forloop.last %}.{% else %},{% endif%}{% endfor%}</div>
+                    {% assign valid_tags = "" | split: ',' %}
+                    {% assign modality_tags = "" | split: ',' %}
+                    {% assign type_tags = "" | split: ',' %}
+                    {%for tag in entry.data.tags %}
+                        {% if modality_mappings contains tag.tag %}
+                            {% assign modality_tags = modality_tags | push: tag.tag %}
+                        {% elsif  type_mappings contains tag.tag %}
+                            {% assign type_tags = type_tags | push: tag.tag %}
+                        {% else %}
+                            {% assign valid_tags = valid_tags | push: tag.tag %}
+                        {% endif %}
+                    {% endfor %}
+                    <div>Type: {{ site.data.literature_mapping.types[type_tags.first] }}</div>
+                    <div>Imaging Modality: {{ site.data.literature_mapping.modalities[modality_tags.first] }}</div>
+                    <div>Tags: {%for tag in valid_tags %}
+                            {{tag}}{%if forloop.last %}.{% else %},{% endif%}
+                        {% endfor%}</div>
 
                 </div>
             </button>
