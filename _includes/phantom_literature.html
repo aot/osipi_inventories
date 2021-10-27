@@ -3,6 +3,7 @@
 <!-- Container -->
 <div class="container">
     <h1>Phantom and DRO Literature Inventory</h1>
+    <div>All literature references are held in the <a href= "https://www.zotero.org/groups/2900833/osipi_tf3.1_literature/library">OSIPI TF3.1 Literature zotero library</a></div>
     {% assign modality_mappings = "" | split: ',' %}
     {% for label in site.data.literature_mapping.modalities %}
         {% assign modality_mappings =  modality_mappings | push : label[0] %}

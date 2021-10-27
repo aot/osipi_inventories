@@ -1,7 +1,144 @@
 [
     {
+        "key": "P7WAH7GE",
+        "version": 259,
+        "library": {
+            "type": "group",
+            "id": 2900833,
+            "name": "OSIPI TF3.1 Literature",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/osipi_tf3.1_literature",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/2900833/items/P7WAH7GE",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/osipi_tf3.1_literature/items/P7WAH7GE",
+                "type": "text/html"
+            },
+            "attachment": {
+                "href": "https://api.zotero.org/groups/2900833/items/I3GLT5RD",
+                "type": "application/json",
+                "attachmentType": "application/pdf",
+                "attachmentSize": 1794690
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 5635422,
+                "username": "jimhholmes",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/jimhholmes",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "lastModifiedByUser": {
+                "id": 1405725,
+                "username": "aaronolivertaylor",
+                "name": "",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/aaronolivertaylor",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Semmineh et al.",
+            "parsedDate": "2017-03",
+            "numChildren": 2
+        },
+        "data": {
+            "key": "P7WAH7GE",
+            "version": 259,
+            "itemType": "journalArticle",
+            "title": "A Population-Based Digital Reference Object (DRO) for Optimizing Dynamic Susceptibility Contrast (DSC)-MRI Methods for Clinical Trials",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Natenael B.",
+                    "lastName": "Semmineh"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Ashley M.",
+                    "lastName": "Stokes"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Laura C.",
+                    "lastName": "Bell"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Jerrold L.",
+                    "lastName": "Boxerman"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "C. Chad",
+                    "lastName": "Quarles"
+                }
+            ],
+            "abstractNote": "The standardization and broad-scale integration of dynamic susceptibility contrast (DSC)-magnetic resonance imaging (MRI) have been confounded by a lack of consensus on DSC-MRI methodology for preventing potential relative cerebral blood volume inaccuracies, including the choice of acquisition protocols and postprocessing algorithms. Therefore, we developed a digital reference object (DRO), using physiological and kinetic parameters derived from in vivo data, unique voxel-wise 3-dimensional tissue structures, and a validated MRI signal computational approach, aimed at validating image acquisition and analysis methods for accurately measuring relative cerebral blood volume in glioblastomas. To achieve DSC-MRI signals representative of the temporal characteristics, magnitude, and distribution of contrast agent-induced T1 and T2* changes observed across multiple glioblastomas, the DRO's input parameters were trained using DSC-MRI data from 23 glioblastomas (&gt;40 000 voxels). The DRO's ability to produce reliable signals for combinations of pulse sequence parameters and contrast agent dosing schemes unlike those in the training data set was validated by comparison with in vivo dual-echo DSC-MRI data acquired in a separate cohort of patients with glioblastomas. Representative applications of the DRO are presented, including the selection of DSC-MRI acquisition and postprocessing methods that optimize CBV accuracy, determination of the impact of DSC-MRI methodology choices on sample size requirements, and the assessment of treatment response in clinical glioblastoma trials.",
+            "publicationTitle": "Tomography",
+            "volume": "3",
+            "issue": "1",
+            "pages": "41-49",
+            "date": "2017/3",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "en",
+            "DOI": "10.18383/j.tom.2016.00286",
+            "ISSN": "",
+            "shortTitle": "",
+            "url": "https://www.mdpi.com/2379-139X/3/1/41",
+            "accessDate": "2021-04-09T22:36:43Z",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "www.mdpi.com",
+            "callNumber": "",
+            "rights": "http://creativecommons.org/licenses/by/3.0/",
+            "extra": "Number: 1\nPublisher: Multidisciplinary Digital Publishing Institute",
+            "tags": [
+                {
+                    "tag": "brain tumor perfusion",
+                    "type": 1
+                },
+                {
+                    "tag": "digital reference object",
+                    "type": 1
+                },
+                {
+                    "tag": "dynamic susceptibility contrast MRI",
+                    "type": 1
+                },
+                {
+                    "tag": "modality_dsc"
+                },
+                {
+                    "tag": "type_dro"
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2021-04-09T22:36:43Z",
+            "dateModified": "2021-09-16T16:26:29Z"
+        }
+    },
+    {
         "key": "38XGMI8I",
-        "version": 252,
+        "version": 258,
         "library": {
             "type": "group",
             "id": 2900833,
@@ -56,7 +193,7 @@
         },
         "data": {
             "key": "38XGMI8I",
-            "version": 252,
+            "version": 258,
             "itemType": "webpage",
             "title": "QIBA - Digital Reference Object for Profile DCE-MRI Analysis Software Verification 2",
             "creators": [],
@@ -70,129 +207,18 @@
             "language": "",
             "rights": "",
             "extra": "",
-            "tags": [],
+            "tags": [
+                {
+                    "tag": "modality_dce"
+                },
+                {
+                    "tag": "type_dro"
+                }
+            ],
             "collections": [],
             "relations": {},
             "dateAdded": "2021-04-09T22:31:52Z",
-            "dateModified": "2021-08-10T20:28:21Z"
-        }
-    },
-    {
-        "key": "43BGCKJN",
-        "version": 253,
-        "library": {
-            "type": "group",
-            "id": 2900833,
-            "name": "OSIPI TF3.1 Literature",
-            "links": {
-                "alternate": {
-                    "href": "https://www.zotero.org/groups/osipi_tf3.1_literature",
-                    "type": "text/html"
-                }
-            }
-        },
-        "links": {
-            "self": {
-                "href": "https://api.zotero.org/groups/2900833/items/43BGCKJN",
-                "type": "application/json"
-            },
-            "alternate": {
-                "href": "https://www.zotero.org/groups/osipi_tf3.1_literature/items/43BGCKJN",
-                "type": "text/html"
-            }
-        },
-        "meta": {
-            "createdByUser": {
-                "id": 5632437,
-                "username": "mulanjen",
-                "name": "Mu-Lan Jen",
-                "links": {
-                    "alternate": {
-                        "href": "https://www.zotero.org/mulanjen",
-                        "type": "text/html"
-                    }
-                }
-            },
-            "numChildren": 0
-        },
-        "data": {
-            "key": "43BGCKJN",
-            "version": 253,
-            "itemType": "attachment",
-            "linkMode": "imported_url",
-            "title": "Full Text",
-            "accessDate": "2021-08-10T19:33:39Z",
-            "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mrm.28683",
-            "note": "",
-            "contentType": "application/pdf",
-            "charset": "",
-            "filename": "Bones et al. - 2021 - Exploring label dynamics of velocity-selective art.pdf",
-            "md5": null,
-            "mtime": null,
-            "tags": [],
-            "collections": [],
-            "relations": {},
-            "dateAdded": "2021-08-10T19:33:39Z",
-            "dateModified": "2021-08-10T19:33:39Z"
-        }
-    },
-    {
-        "key": "BLVT26C5",
-        "version": 253,
-        "library": {
-            "type": "group",
-            "id": 2900833,
-            "name": "OSIPI TF3.1 Literature",
-            "links": {
-                "alternate": {
-                    "href": "https://www.zotero.org/groups/osipi_tf3.1_literature",
-                    "type": "text/html"
-                }
-            }
-        },
-        "links": {
-            "self": {
-                "href": "https://api.zotero.org/groups/2900833/items/BLVT26C5",
-                "type": "application/json"
-            },
-            "alternate": {
-                "href": "https://www.zotero.org/groups/osipi_tf3.1_literature/items/BLVT26C5",
-                "type": "text/html"
-            }
-        },
-        "meta": {
-            "createdByUser": {
-                "id": 5632437,
-                "username": "mulanjen",
-                "name": "Mu-Lan Jen",
-                "links": {
-                    "alternate": {
-                        "href": "https://www.zotero.org/mulanjen",
-                        "type": "text/html"
-                    }
-                }
-            },
-            "numChildren": 0
-        },
-        "data": {
-            "key": "BLVT26C5",
-            "version": 253,
-            "itemType": "attachment",
-            "linkMode": "imported_url",
-            "title": "Snapshot",
-            "accessDate": "2021-08-10T19:33:37Z",
-            "url": "https://onlinelibrary.wiley.com/doi/10.1002/mrm.28683",
-            "note": "",
-            "contentType": "text/html",
-            "charset": "utf-8",
-            "filename": "mrm.html",
-            "md5": null,
-            "mtime": null,
-            "tags": [],
-            "collections": [],
-            "relations": {},
-            "dateAdded": "2021-08-10T19:33:37Z",
-            "dateModified": "2021-08-10T19:33:37Z"
+            "dateModified": "2021-08-12T16:31:16Z"
         }
     },
     {
@@ -988,143 +1014,6 @@
             },
             "dateAdded": "2021-04-09T22:33:45Z",
             "dateModified": "2021-08-10T19:19:39Z"
-        }
-    },
-    {
-        "key": "P7WAH7GE",
-        "version": 240,
-        "library": {
-            "type": "group",
-            "id": 2900833,
-            "name": "OSIPI TF3.1 Literature",
-            "links": {
-                "alternate": {
-                    "href": "https://www.zotero.org/groups/osipi_tf3.1_literature",
-                    "type": "text/html"
-                }
-            }
-        },
-        "links": {
-            "self": {
-                "href": "https://api.zotero.org/groups/2900833/items/P7WAH7GE",
-                "type": "application/json"
-            },
-            "alternate": {
-                "href": "https://www.zotero.org/groups/osipi_tf3.1_literature/items/P7WAH7GE",
-                "type": "text/html"
-            },
-            "attachment": {
-                "href": "https://api.zotero.org/groups/2900833/items/I3GLT5RD",
-                "type": "application/json",
-                "attachmentType": "application/pdf",
-                "attachmentSize": 1794690
-            }
-        },
-        "meta": {
-            "createdByUser": {
-                "id": 5635422,
-                "username": "jimhholmes",
-                "name": "",
-                "links": {
-                    "alternate": {
-                        "href": "https://www.zotero.org/jimhholmes",
-                        "type": "text/html"
-                    }
-                }
-            },
-            "lastModifiedByUser": {
-                "id": 5632437,
-                "username": "mulanjen",
-                "name": "Mu-Lan Jen",
-                "links": {
-                    "alternate": {
-                        "href": "https://www.zotero.org/mulanjen",
-                        "type": "text/html"
-                    }
-                }
-            },
-            "creatorSummary": "Semmineh et al.",
-            "parsedDate": "2017-03",
-            "numChildren": 2
-        },
-        "data": {
-            "key": "P7WAH7GE",
-            "version": 240,
-            "itemType": "journalArticle",
-            "title": "A Population-Based Digital Reference Object (DRO) for Optimizing Dynamic Susceptibility Contrast (DSC)-MRI Methods for Clinical Trials",
-            "creators": [
-                {
-                    "creatorType": "author",
-                    "firstName": "Natenael B.",
-                    "lastName": "Semmineh"
-                },
-                {
-                    "creatorType": "author",
-                    "firstName": "Ashley M.",
-                    "lastName": "Stokes"
-                },
-                {
-                    "creatorType": "author",
-                    "firstName": "Laura C.",
-                    "lastName": "Bell"
-                },
-                {
-                    "creatorType": "author",
-                    "firstName": "Jerrold L.",
-                    "lastName": "Boxerman"
-                },
-                {
-                    "creatorType": "author",
-                    "firstName": "C. Chad",
-                    "lastName": "Quarles"
-                }
-            ],
-            "abstractNote": "The standardization and broad-scale integration of dynamic susceptibility contrast (DSC)-magnetic resonance imaging (MRI) have been confounded by a lack of consensus on DSC-MRI methodology for preventing potential relative cerebral blood volume inaccuracies, including the choice of acquisition protocols and postprocessing algorithms. Therefore, we developed a digital reference object (DRO), using physiological and kinetic parameters derived from in vivo data, unique voxel-wise 3-dimensional tissue structures, and a validated MRI signal computational approach, aimed at validating image acquisition and analysis methods for accurately measuring relative cerebral blood volume in glioblastomas. To achieve DSC-MRI signals representative of the temporal characteristics, magnitude, and distribution of contrast agent-induced T1 and T2* changes observed across multiple glioblastomas, the DRO's input parameters were trained using DSC-MRI data from 23 glioblastomas (&gt;40 000 voxels). The DRO's ability to produce reliable signals for combinations of pulse sequence parameters and contrast agent dosing schemes unlike those in the training data set was validated by comparison with in vivo dual-echo DSC-MRI data acquired in a separate cohort of patients with glioblastomas. Representative applications of the DRO are presented, including the selection of DSC-MRI acquisition and postprocessing methods that optimize CBV accuracy, determination of the impact of DSC-MRI methodology choices on sample size requirements, and the assessment of treatment response in clinical glioblastoma trials.",
-            "publicationTitle": "Tomography",
-            "volume": "3",
-            "issue": "1",
-            "pages": "41-49",
-            "date": "2017/3",
-            "series": "",
-            "seriesTitle": "",
-            "seriesText": "",
-            "journalAbbreviation": "",
-            "language": "en",
-            "DOI": "10.18383/j.tom.2016.00286",
-            "ISSN": "",
-            "shortTitle": "",
-            "url": "https://www.mdpi.com/2379-139X/3/1/00286",
-            "accessDate": "2021-04-09T22:36:43Z",
-            "archive": "",
-            "archiveLocation": "",
-            "libraryCatalog": "www.mdpi.com",
-            "callNumber": "",
-            "rights": "http://creativecommons.org/licenses/by/3.0/",
-            "extra": "Number: 1\nPublisher: Multidisciplinary Digital Publishing Institute",
-            "tags": [
-                {
-                    "tag": "brain tumor perfusion",
-                    "type": 1
-                },
-                {
-                    "tag": "digital reference object",
-                    "type": 1
-                },
-                {
-                    "tag": "dynamic susceptibility contrast MRI",
-                    "type": 1
-                },
-                {
-                    "tag": "modality_dsc"
-                },
-                {
-                    "tag": "type_dro"
-                }
-            ],
-            "collections": [],
-            "relations": {},
-            "dateAdded": "2021-04-09T22:36:43Z",
-            "dateModified": "2021-08-10T19:15:48Z"
         }
     },
     {
@@ -3312,6 +3201,286 @@
             "relations": {},
             "dateAdded": "2021-04-24T20:48:30Z",
             "dateModified": "2021-07-09T14:39:53Z"
+        }
+    },
+    {
+        "key": "DY7S8IEU",
+        "version": 183,
+        "library": {
+            "type": "group",
+            "id": 2900833,
+            "name": "OSIPI TF3.1 Literature",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/osipi_tf3.1_literature",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/2900833/items/DY7S8IEU",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/osipi_tf3.1_literature/items/DY7S8IEU",
+                "type": "text/html"
+            },
+            "attachment": {
+                "href": "https://api.zotero.org/groups/2900833/items/6WG8WFYW",
+                "type": "application/json",
+                "attachmentType": "application/pdf",
+                "attachmentSize": 3747750
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 5632437,
+                "username": "mulanjen",
+                "name": "Mu-Lan Jen",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/mulanjen",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Kim et al.",
+            "parsedDate": "2017",
+            "numChildren": 2
+        },
+        "data": {
+            "key": "DY7S8IEU",
+            "version": 183,
+            "itemType": "journalArticle",
+            "title": "Portable perfusion phantom for quantitative DCE-MRI of the abdomen",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Harrison",
+                    "lastName": "Kim"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Mina",
+                    "lastName": "Mousa"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Patrick",
+                    "lastName": "Schexnailder"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Robert",
+                    "lastName": "Hergenrother"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Mark",
+                    "lastName": "Bolding"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Bernard",
+                    "lastName": "Ntsikoussalabongui"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Vinoy",
+                    "lastName": "Thomas"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Desiree E.",
+                    "lastName": "Morgan"
+                }
+            ],
+            "abstractNote": "Purpose The aim of this study was to develop a portable perfusion phantom and validate its utility in quantitative dynamic contrast-enhanced magnetic resonance imaging of the abdomen. Methods A portable perfusion phantom yielding a reproducible contrast enhancement curve (CEC) was developed. A phantom package including perfusion and static phantoms were imaged simultaneously with each of three healthy human volunteers in two different 3T MR scanners. Look-up tables correlating reference (known) contrast concentrations with measured ones were created using either the static or perfusion phantom. Contrast maps of image slices showing four organs (liver, spleen, pancreas, and paravertebral muscle) were generated before and after data correction using the look-up tables. The contrast concentrations at 4.5 min after dosing in each of the four organs were averaged for each volunteer. The mean contrast concentrations (4 organs × 3 volunteers = 12) were compared for the two scanners, and the intra-class correlation coefficient (ICC) was calculated. Also, the ICC of the mean Ktrans values between the two scanners was calculated before and after data correction. Results The repeatability coefficient of CECs of perfusion phantom was higher than 0.997 in all measurements. The ICC of the tissue contrast concentrations between the two scanners was 0.693 before correction, but increased to 0.974 after correction using the look-up tables (LUTs) of perfusion phantom. However, the ICC was not increased after correction using static phantom (ICC: 0.617). Similarly, the ICC of the Ktrans values was 0.899 before correction, but increased to 0.996 after correction using perfusion phantom LUTs. The ICC of the Ktrans values, however, was not increased when static phantom LUTs were used (ICC: 0.866). Conclusions The perfusion phantom reduced variability in quantitating contrast concentration and Ktrans values of human abdominal tissues across different MR units, but static phantom did not. The perfusion phantom has the potential to facilitate multi-institutional clinical trials employing quantitative DCE-MRI to evaluate various abdominal malignancies.",
+            "publicationTitle": "Medical Physics",
+            "volume": "44",
+            "issue": "10",
+            "pages": "5198-5209",
+            "date": "2017",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "",
+            "language": "en",
+            "DOI": "https://doi.org/10.1002/mp.12466",
+            "ISSN": "2473-4209",
+            "shortTitle": "",
+            "url": "https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.12466",
+            "accessDate": "2021-04-24T20:44:20Z",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "Wiley Online Library",
+            "callNumber": "",
+            "rights": "© 2017 American Association of Physicists in Medicine",
+            "extra": "_eprint: https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.12466",
+            "tags": [
+                {
+                    "tag": "DCE-MRI",
+                    "type": 1
+                },
+                {
+                    "tag": "abdomen",
+                    "type": 1
+                },
+                {
+                    "tag": "modality_dce"
+                },
+                {
+                    "tag": "perfusion parameters",
+                    "type": 1
+                },
+                {
+                    "tag": "perfusion phantom",
+                    "type": 1
+                },
+                {
+                    "tag": "static phantom",
+                    "type": 1
+                },
+                {
+                    "tag": "type_phantom"
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2021-04-24T20:44:20Z",
+            "dateModified": "2021-07-09T14:36:25Z"
+        }
+    },
+    {
+        "key": "CNVR9UJ8",
+        "version": 181,
+        "library": {
+            "type": "group",
+            "id": 2900833,
+            "name": "OSIPI TF3.1 Literature",
+            "links": {
+                "alternate": {
+                    "href": "https://www.zotero.org/groups/osipi_tf3.1_literature",
+                    "type": "text/html"
+                }
+            }
+        },
+        "links": {
+            "self": {
+                "href": "https://api.zotero.org/groups/2900833/items/CNVR9UJ8",
+                "type": "application/json"
+            },
+            "alternate": {
+                "href": "https://www.zotero.org/groups/osipi_tf3.1_literature/items/CNVR9UJ8",
+                "type": "text/html"
+            },
+            "attachment": {
+                "href": "https://api.zotero.org/groups/2900833/items/EEE5PQXN",
+                "type": "application/json",
+                "attachmentType": "application/pdf",
+                "attachmentSize": 1056697
+            }
+        },
+        "meta": {
+            "createdByUser": {
+                "id": 5632437,
+                "username": "mulanjen",
+                "name": "Mu-Lan Jen",
+                "links": {
+                    "alternate": {
+                        "href": "https://www.zotero.org/mulanjen",
+                        "type": "text/html"
+                    }
+                }
+            },
+            "creatorSummary": "Kamphuis et al.",
+            "parsedDate": "2020-03-04",
+            "numChildren": 2
+        },
+        "data": {
+            "key": "CNVR9UJ8",
+            "version": 181,
+            "itemType": "journalArticle",
+            "title": "Quantitative imaging: systematic review of perfusion/flow phantoms",
+            "creators": [
+                {
+                    "creatorType": "author",
+                    "firstName": "Marije E.",
+                    "lastName": "Kamphuis"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Marcel J. W.",
+                    "lastName": "Greuter"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Riemer H. J. A.",
+                    "lastName": "Slart"
+                },
+                {
+                    "creatorType": "author",
+                    "firstName": "Cornelis H.",
+                    "lastName": "Slump"
+                }
+            ],
+            "abstractNote": "We aimed at reviewing design and realisation of perfusion/flow phantoms for validating quantitative perfusion imaging (PI) applications to encourage best practices.",
+            "publicationTitle": "European Radiology Experimental",
+            "volume": "4",
+            "issue": "1",
+            "pages": "15",
+            "date": "March 4, 2020",
+            "series": "",
+            "seriesTitle": "",
+            "seriesText": "",
+            "journalAbbreviation": "European Radiology Experimental",
+            "language": "",
+            "DOI": "10.1186/s41747-019-0133-2",
+            "ISSN": "2509-9280",
+            "shortTitle": "Quantitative imaging",
+            "url": "https://doi.org/10.1186/s41747-019-0133-2",
+            "accessDate": "2021-04-24T20:41:33Z",
+            "archive": "",
+            "archiveLocation": "",
+            "libraryCatalog": "BioMed Central",
+            "callNumber": "",
+            "rights": "",
+            "extra": "",
+            "tags": [
+                {
+                    "tag": "DCE"
+                },
+                {
+                    "tag": "Microcirculation",
+                    "type": 1
+                },
+                {
+                    "tag": "Perfusion imaging",
+                    "type": 1
+                },
+                {
+                    "tag": "Phantoms (imaging)",
+                    "type": 1
+                },
+                {
+                    "tag": "Reference standards",
+                    "type": 1
+                },
+                {
+                    "tag": "modality_dce"
+                },
+                {
+                    "tag": "physical phantom"
+                },
+                {
+                    "tag": "type_phantom"
+                }
+            ],
+            "collections": [],
+            "relations": {},
+            "dateAdded": "2021-04-24T20:41:33Z",
+            "dateModified": "2021-07-09T14:35:33Z"
         }
     }
 ]
