@@ -9,7 +9,9 @@
                 <div class="row">
                     <div class="row">
                         <div class="columnL">
-                            <img src="../images_inventories/phantom_contributions/{{ entry.imageFile }}" style="max-width:100%; max-height: 100px;" />
+                            {%if entry.imageFile %}
+                            <img src="../images_inventories/phantom_contributions/{{ entry.imageFile }}" style="max-width:100%; max-height: 200px;" />
+                            {% endif %}
                         </div>
                         <div class="columnR">
                             <a href="{{ entry.url[0] }}">
@@ -22,7 +24,7 @@
                         <div>Contact: {{ entry.contactFirstName }} {{ entry.contactLastName}}, <a href="mailto:{{ entry.contactEmail}}">{{ entry.contactEmail }}</a></div>
                         <div><a href="{{entry.contactInstitutionUrl}}">{{ entry.contactInstitution }}</a> </div>
                         <div>Collaboration Type: {%for type in entry.type%} {{type}}{%if forloop.last %}.{% else %},{% endif%}{% endfor%}</div>
-                        <div>Imaging Modality: {{entry.modality}}</div>
+                        <div>Imaging Modality:  {%for modality in entry.modality%} {{modality}}{%if forloop.last %}.{% else %},{% endif%}{% endfor%}</div>
                         <br>
                     </div>
                 </div>
