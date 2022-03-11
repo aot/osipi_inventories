@@ -9,14 +9,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-          fetch-depth: 0
+          fetch-depth: 2
       - name: update 
         run: |
           curl -o _data/phantom_literature.json "https://api.zotero.org/groups/2900833/items/top?key=eTYEyPZvup4cRMnUrMkSPkAS&format=json"
       - name: Check for changes (fail if none)
         run: |
           git diff --quiet _data/phantom_literature.json
-          echo "FILES_CHANGED=$?" >> $GITHUB_ENV
+          FILES_CHANGED=$?
+          echo "FILES_CHANGED=$FILES_CHANGED" >> $GITHUB_ENV
+          echo $FILES_CHANGED
           exit 0
       - name: Commit files
         if: env.FILES_CHANGED == 1
